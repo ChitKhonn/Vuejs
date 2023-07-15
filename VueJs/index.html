@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vuejs</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-       <div v-if="showData">
-        <h1> Team - {{team}} </h1>
-        <h2> Name - {{player}} </h2>
-        <h3> Age -  {{age}} </h3>
-       </div>
-       <button @click="showData =! showData ">
+      <div v-if="showData">
+        <h1>Team - {{team}}</h1>
+        <h2>Name - {{player}}</h2>
+        <h3>Age - {{age}}</h3>
+      </div>
+      <button @click="showData =! showData ">
         <span v-if="showData">hide</span>
         <span v-if="!showData">show</span>
-
-
-       </button>
-        <!-- <button v-on:click="IncreaseAge"  >Click IncreaseAge</button>
+      </button>
+      <!-- <button v-on:click="IncreaseAge"  >Click IncreaseAge</button>
         <button v-on:click="player = 'Sancho' ">Click Change name</button> -->
 
+      <!-- link data bind -->
+      <a v-bind:href="link">Go to google</a>
     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

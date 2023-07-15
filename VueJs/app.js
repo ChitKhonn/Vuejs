@@ -5,7 +5,8 @@ const app = Vue.createApp(
                 team:"manchester united",
                 player:"martial",
                 age:27,
-                showData:true
+                showData:true,
+                link:"https://www.google.com/"
             }
         },
         methods: {
