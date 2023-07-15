@@ -6,7 +6,12 @@ const app = Vue.createApp(
                 player:"martial",
                 age:27,
             }
-        }
+        },
+        methods: {
+            IncreaseAge(){
+                this.age++
+            }
+        },
     }
 );
 app.mount('#app');
