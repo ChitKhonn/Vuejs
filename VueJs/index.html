@@ -8,11 +8,19 @@
 </head>
 <body>
     <div id="app">
+       <div v-if="showData">
         <h1> Team - {{team}} </h1>
         <h2> Name - {{player}} </h2>
         <h3> Age -  {{age}} </h3>
-        <button v-on:click="IncreaseAge"  >Click IncreaseAge</button>
-        <button v-on:click="player = 'Sancho' ">Click Change name</button>
+       </div>
+       <button @click="showData =! showData ">
+        <span v-if="showData">hide</span>
+        <span v-if="!showData">show</span>
+
+
+       </button>
+        <!-- <button v-on:click="IncreaseAge"  >Click IncreaseAge</button>
+        <button v-on:click="player = 'Sancho' ">Click Change name</button> -->
 
     </div>
 
