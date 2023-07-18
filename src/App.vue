@@ -11,7 +11,7 @@ export default {
   name: 'App',
   data(){
     return{
-      text:"hey what's up? bro"
+      text:"hey what's up? bro!"
     }
   },
   components: {
