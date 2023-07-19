@@ -11,7 +11,7 @@ export default {
   name: 'App',
   data(){
     return{
-      text:"hey what's up? bro!"
+      text:"Hi this is my vue tesing project!"
     }
   },
   components: {
